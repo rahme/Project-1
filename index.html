@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spot-a-Show</title>
-    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.css">
     <link rel="stylesheet" href="Assests/css/style.css">
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
 </head>
@@ -18,10 +18,27 @@
     <div id="homeScreen">
         <!-- site logo -->
         <div id="logo">
-
+            <div class="columns">
+                <div class="column">
+                    <h1 id="head">Spot-A-Show</h1>
+                </div>
+            </div>
         </div>
         <div id="searchBar">
-
+            <div class="columns is-mobile is-centered">
+                <div class="column is-narrow">
+                    <div class="field has-addons">
+                        <div class="control">
+                          <input class="input" type="text" placeholder="Search Your Artist">
+                        </div>
+                        <div class="control">
+                          <a class="button is-info">
+                            Search
+                          </a>
+                        </div>
+                    </div>
+                </div>
+              </div>
         </div>
     
     </div>
@@ -29,8 +46,9 @@
     <div id="searchInfo">   
         
         <!-- after search of artists then the spotify api will display artist photo, artist info, possibly list of songs  -->
+        <!-- create a filler template using artist name, picture, top songs, etc -->
         <div id="spotifyDisplay">
-
+            
         </div>
         <!--here will display to user the artists upcoming shows using the ticketmaster API  -->
         <div id="ticketMaster">
