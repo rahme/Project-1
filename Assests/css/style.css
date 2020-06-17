@@ -1,0 +1,31 @@
+#head{
+    text-align: center;
+}
+.column{
+    background-color: aqua;
+    border: 1px black solid;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.mycon{
+    border: 1px black solid;
+}
+
+.myrow{
+    border: 1px red solid;
+}
+
+.mycol{
+    border: 1px green solid;
+}

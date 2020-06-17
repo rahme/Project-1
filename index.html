@@ -18,18 +18,27 @@
     <div id="homeScreen">
         <!-- site logo -->
         <div id="logo">
-            <h1> Spot-a-Show </h1>
-
+            <div class="columns">
+                <div class="column">
+                    <h1 id="head">Spot-A-Show</h1>
+                </div>
+            </div>
         </div>
         <div id="searchBar">
             <div class="columns is-mobile is-centered">
-                <div class="column is-half">
-                  <p class="bd-notification is-primary">
-                    <code class="html">is-half</code><br>
-                  </p>
+                <div class="column is-narrow">
+                    <div class="field has-addons">
+                        <div class="control">
+                          <input class="input" type="text" placeholder="Search Your Artist">
+                        </div>
+                        <div class="control">
+                          <a class="button is-info">
+                            Search
+                          </a>
+                        </div>
+                    </div>
                 </div>
               </div>
-
         </div>
     
     </div>
@@ -37,8 +46,9 @@
     <div id="searchInfo">   
         
         <!-- after search of artists then the spotify api will display artist photo, artist info, possibly list of songs  -->
+        <!-- create a filler template using artist name, picture, top songs, etc -->
         <div id="spotifyDisplay">
-
+            
         </div>
         <!--here will display to user the artists upcoming shows using the ticketmaster API  -->
         <div id="ticketMaster">
