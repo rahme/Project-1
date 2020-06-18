@@ -2,10 +2,21 @@
     text-align: center;
 }
 .column{
-    background-color: aqua;
     border: 1px black solid;
 }
 
+#artistImg,
+#artistInfo,
+#songList {
+    background-color: #1DB954;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* display: none; */
+}
+
+#artistImg {
+    text-align: center;
+}
 
 
 
