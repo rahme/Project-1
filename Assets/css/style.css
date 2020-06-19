@@ -1,0 +1,75 @@
+html {
+    background-image: url('../images/concert-1.jpg');
+    background-repeat: no-repeat;
+    height:100%;
+}
+
+body
+
+#head{
+    text-align: center;
+}
+
+#artistImg,
+#artistInfo,
+#songList {
+    background-color: #1DB954;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#artistImg {
+    text-align: center;
+
+}
+
+.footer {
+    position: fixed;
+    max-height: 10px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    padding-top: 20px;
+    display: block;
+    margin-top: 20px; /* space between content and footer */
+    box-sizing: border-box;
+    width: 100%;   
+     
+}
+
+#footer {
+    outline-width: 2px;
+    outline-style: solid;
+}
+
+.box {
+    height: 200px;
+    align-items: center
+}
+
+.showList {
+    float: right;
+    
+}
+
+.ticketMasterLogo {
+    float: left;
+   
+}
+
+#logo{
+    font-size: 60px;
+    font-family: 'Staatliches', cursive;
+}
+#greenText{
+    color: #1DB954;
+}
+#blackText{
+    color: #191414;
+}
+#whiteText{
+    color:     #FFFFFF;
+}
