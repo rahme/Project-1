@@ -1,20 +1,14 @@
+html {
+    background-image: url('../images/concert-1.jpg');
+    background-repeat: no-repeat;
+    height:100%;
+}
+
+body
+
 #head{
     text-align: center;
 }
-.column{
-    background-color: aqua;
-    border: 1px black solid;
-}
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -29,3 +23,68 @@
 .mycol{
     border: 1px green solid;
 }
+
+
+.footer {
+    position: fixed;
+    max-height: 10px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    padding-top: 20px;
+    display: block;
+    margin-top: 20px; /* space between content and footer */
+    box-sizing: border-box;
+    width: 100%;
+    
+     
+}
+
+#footer {
+    outline-width: 2px;
+    outline-style: solid;
+}
+
+
+.ticketMasterContainer 
+    
+
+
+.homeScreen 
+    
+
+
+.box {
+    height: 200px;
+    align-items: center
+}
+
+.showList {
+    float: right;
+    
+}
+
+.ticketMasterLogo {
+    float: left;
+   
+}
+
+.columns {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin-bottom: 0;
+
+}
+
+.column {
+    margin: 5px;
+    padding: 5px;
+    background-color: gray;
+    border: 1px black solid;
+    
+}
+

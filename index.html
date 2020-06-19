@@ -15,7 +15,7 @@
 
     </header>
     <!-- home screen div search bar i.e. like google. this will be the first and only thing  that the user sees -->
-    <div id="homeScreen">
+    <div id="homeScreen" class="homeScreen">
         <!-- site logo -->
         <div id="logo">
             <div class="columns">
@@ -43,22 +43,42 @@
     
     </div>
     <!-- this is the second page displayed to user following search, displaying both spotify and ticketmaster info -->
-    <div id="searchInfo">   
+    <div id="searchInfo" class="tile is-ancestor">   
         
         <!-- after search of artists then the spotify api will display artist photo, artist info, possibly list of songs  -->
         <!-- create a filler template using artist name, picture, top songs, etc -->
         <div id="spotifyDisplay">
             
         </div>
-        <!--here will display to user the artists upcoming shows using the ticketmaster API  -->
-        <div id="ticketMaster">
-
+        <!--here will display to user the artists upcoming shows using the ticketmaster API// two boxes with api attr. on top of one large container box with photo background  -->
+        <div id="ticketMaster" class="columns tile is-parent is is-mobile ticketMasterContainer">
+            <!-- box for ticketmaster logo float right, possibly small tm photo -->
+            <div id="ticketMasterLogo" class="column tile is-child box is-4 is-one-third ticketMasterLogo">
+                <!--  -->
+                <div>
+                    <img src="Assests/images/ticketmaster-text-logo-transparent.png" height="200" width="200" alt="Ticketmaster logo.">
+                </div>
+                
+            </div>
+            <!-- box for list of shows, float left -->
+            <div id="showList" class="column tile is-child box is-8 is-two-thirds showList">
+                <div>
+                    
+                </div>
+                
+            </div>
         </div>
     </div> 
-    <!-- sticky footer with website authors names -->
-    <footer id="footer">
+    
+    
+    <footer id="footer" class="footer">
+        <div class="content has-text-centered">
+          <p>
+            <strong>Spot-A-Show</strong> by <a href="https://github.com/rahme">Raffay Ahmed</a>, <a href="https://github.com/andrewyen64">Andrew Yen</a> and <a href="https://github.com/cmsebastian">Chris Sebastian</a>.
+          </p>
+        </div>
+      </footer>
 
-    </footer>
 
 </div>    
 <script src="Assests/js/script.js">
