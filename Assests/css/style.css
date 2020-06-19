@@ -88,3 +88,32 @@ body
     
 }
 
+#artistImg,
+#artistInfo,
+#songList {
+    background-color: #1DB954;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* display: none; */
+}
+
+#artistImg {
+    text-align: center;
+}
+
+Message #general
+
+#logo{
+    text-align: center;
+    font-size: 60px;
+    font-family: 'Staatliches', cursive;
+}
+#greenText{
+    color: #1DB954;
+}
+#blackText{
+    color: #191414;
+}
+#whiteText{
+    color:     #FFFFFF;
+}

@@ -15,24 +15,30 @@
 
     </header>
     <!-- home screen div search bar i.e. like google. this will be the first and only thing  that the user sees -->
-    <div id="homeScreen" class="homeScreen">
+        <div id="homeScreen">
         <!-- site logo -->
         <div id="logo">
-            <div class="columns">
-                <div class="column">
-                    <h1 id="head">Spot-A-Show</h1>
-                </div>
-            </div>
+            <h1 id="head">
+                <span id="greenText">
+                    Spot-
+                </span>
+                <span id="blackText">
+                    A
+                </span>
+                <span id="whiteText">
+                    -Show
+                </span>
+            </h1>
         </div>
         <div id="searchBar">
             <div class="columns is-mobile is-centered">
-                <div class="column is-narrow">
+                <div class="column is-11">
                     <div class="field has-addons">
-                        <div class="control">
-                          <input class="input" type="text" placeholder="Search Your Artist">
+                        <div class="control is-expanded">
+                          <input id="artist" class="input is-rounded" type="text" placeholder="Search Your Artist">
                         </div>
                         <div class="control">
-                          <a class="button is-info">
+                          <a id="search" class="button is-success is-rounded">
                             Search
                           </a>
                         </div>
@@ -40,15 +46,28 @@
                 </div>
               </div>
         </div>
+    </div>                
     
-    </div>
+    
     <!-- this is the second page displayed to user following search, displaying both spotify and ticketmaster info -->
     <div id="searchInfo" class="tile is-ancestor">   
         
         <!-- after search of artists then the spotify api will display artist photo, artist info, possibly list of songs  -->
         <!-- create a filler template using artist name, picture, top songs, etc -->
         <div id="spotifyDisplay">
-            
+            <div id="artistPicture">
+                <div class="columns">
+                    <div class="column is-one-quarter" id="artistImg">
+                        Spotify Artist Picture
+                    </div>
+                    <div class="column" id="artistInfo">
+                        Spotify Artist Info Filler / Spotify Artist Info Filler / Spotify Artist Info Filler
+                    </div>
+                    <div class="column" id="songList">
+                        Spotify Top Songs/Albums Filler / Spotify Top Songs/Albums Filler / Spotify Top Songs/Albums Filler
+                    </div>
+                </div>
+            </div> 
         </div>
         <!--here will display to user the artists upcoming shows using the ticketmaster API// two boxes with api attr. on top of one large container box with photo background  -->
         <div id="ticketMaster" class="columns tile is-parent is is-mobile ticketMasterContainer">
