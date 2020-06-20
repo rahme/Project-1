@@ -33,7 +33,7 @@ html {
     padding-top: 20px;
     /* display: block; */
     margin-top: 20px; /* space between content and footer */
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     width: 100%;   
      
 }
@@ -66,4 +66,12 @@ img {
 .dateTimeShow {
     background-color: blue;
     color: white;
+}
+
+.column {
+    text-align: center;
+}
+
+#artistInfo {
+    text-align: center;
 }
