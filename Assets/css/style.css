@@ -2,9 +2,8 @@ html {
     background-image: url('../images/concert-1.jpg');
     background-repeat: no-repeat;
     height:100%;
+    align-items: center;
 }
-
-body
 
 #head{
     text-align: center;
@@ -25,7 +24,6 @@ body
 
 .footer {
     position: fixed;
-    max-height: 10px;
     left: 0;
     right: 0;
     bottom: 0;
@@ -33,32 +31,18 @@ body
     text-align: center;
     align-items: center;
     padding-top: 20px;
-    display: block;
+    /* display: block; */
     margin-top: 20px; /* space between content and footer */
     box-sizing: border-box;
     width: 100%;   
      
 }
 
-#footer {
-    outline-width: 2px;
-    outline-style: solid;
+img {
+    max-width: 175px;
+    max-height: 175px;
 }
 
-.box {
-    height: 200px;
-    align-items: center
-}
-
-.showList {
-    float: right;
-    
-}
-
-.bandsInTownContainer {
-    float: left;
-   
-}
 
 #logo{
     font-size: 60px;
@@ -74,3 +58,12 @@ body
     color:     #FFFFFF;
 }
 
+.venueInfoShow {
+    background-color: blue;
+    color: white;
+}
+
+.dateTimeShow {
+    background-color: blue;
+    color: white;
+}
