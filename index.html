@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spot-a-Show</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.css">
+    <link rel="stylesheet" href="Assets/css/reset.css">
     <link rel="stylesheet" href="Assets/css/style.css">
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
 </head>
@@ -49,33 +50,37 @@
         
         <!-- after search of artists then the spotify api will display artist photo, artist info, possibly list of songs  -->
         <!-- create a filler template using artist name, picture, top songs, etc -->
-        <div id="spotifyDisplay">
-            <div>
-                <div class="columns">
-                    <div class="column is-one-quarter" id="artistImg">
-                        Spotify Artist Picture
-                    </div>
-                    <div class="column" id="artistInfo">
-                        Spotify Artist Info Filler / Spotify Artist Info Filler / Spotify Artist Info Filler
-                    </div>
-                    <div class="column" id="songList">
-                        Spotify Top Songs/Albums Filler / Spotify Top Songs/Albums Filler / Spotify Top Songs/Albums Filler
-                    </div>
+        <div id="spotifyDisplay" class="columns">
+          
+                <div id="artistInfo">
+                    <!-- seeing if we can get bands in town img-->
+                    <div id="artistImg"><img src="Assets/images/ticketmaster-logo.jpg" alt="image of artist"></div>
+                    <div id="artistName">Migos</div>
+                    <div id="artistGenre">Hip Hop</div>
                 </div>
-            </div>
+                <div class="column" id="songList">
+                    <!-- Spotify Top Songs/Albums Filler / Spotify Top Songs/Albums Filler / Spotify Top Songs/Albums Filler -->
+                    <div class="songTitle">Song Title 1</div>    
+                    <div class="songTitle">Song Title 2</div>
+                    <div class="songTitle">Song Title 3</div>
+                </div>
             
-            </div> 
+            
         </div>
         <!--here will display to user the artists upcoming shows using the ticketmaster API// two boxes with api attr. on top of one large container box with photo background  -->
-        <div id="ticketMaster" class="columns ticketMasterContainer">
+        <div id="bandsInTown" class="columns bandsInTownContainer">
+            
+                <div id="venueInfoShow" class="column venueInfoShow">
+                    <div class="location">Pokemon Stadium Venue 1</div>
+                    <div class="location">Pokemon Stadium Venue 2</div>
+                    <div class="location">Pokemon Stadium Venue 3</div>
+                </div>
 
-            <div id="ticketMasterLogo" class="column is-one-quarter ticketMasterLogo">
-                ticketmasterlogofiller
-            </div>
-
-            <div id="showList" class="column showList">
-                ticketmastershowlistfiller
-            </div>
+                <div id="dateTimeShow" class="column dateTimeShow">
+                    <div class="time">Month Date Year Date 1</div>
+                    <div class="time">Month Date Year Date 2</div>
+                    <div class="time">Month Date Year Date 3</div>
+                </div>
             
         </div>
     </div> 
@@ -87,7 +92,7 @@
             <strong>Spot-A-Show</strong> by <a href="https://github.com/rahme">Raffay Ahmed</a>, <a href="https://github.com/andrewyen64">Andrew Yen</a> and <a href="https://github.com/cmsebastian">Chris Sebastian</a>.
           </p>
         </div>
-      </footer>
+    </footer>
 
 
 </div>    
