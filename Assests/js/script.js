@@ -1,15 +1,3 @@
-//site will open on #homeScreen with site logo and search bar visble
-
-//on user search
-
-//search bar will minimize and move to top right 
-
-//site logo will move to top left corner
-
-//search results for spotify will be displayed on top part of body
-
-//ticketmaster info will be displayed below spotify info
-
 $("#search").click(function () {
     let artistSearch = $("#artist").val();
     //console.log(artistSearch)
@@ -22,7 +10,6 @@ function fmSearch(artistSearch){
     artistSearch = encodeURIComponent(artistSearch.trim())
     console.log(artistSearch)
 
-
     //Searching for Top Songs
     var queryURL1 = "http://ws.audioscrobbler.com/2.0/?method=artist.gettoptracks&artist=" + artistSearch + "&api_key=c480f7f0a05a2b8e0d17968d01265fbe&format=json"
 
@@ -33,14 +20,10 @@ function fmSearch(artistSearch){
   
         console.log(response);
 
-        console.log(response.toptracks.track[0].name)
-        console.log(response.toptracks.track[1].name)
-        console.log(response.toptracks.track[2].name)
-
-        $("#songTitle1").val(response.toptracks[0].name)
-        $("#songTitle1").val(response.toptracks[1].name)
-        $("#songTitle2").val(response.toptracks[2].name)
-
+        for(i = 0; i < 3; i++){
+          console.log(response.toptracks.track[i].name)
+          //$("ID").val(response.toptracks.track[i].name)
+        }
       });
 
     //Searching for Artist Info
@@ -58,7 +41,8 @@ function fmSearch(artistSearch){
 
 function ticketSearch(artistSearch){
   var queryURL1 = "https://rest.bandsintown.com/artists/" + artistSearch + "/?app_id=45255e6cc480b6c589613047fb0d5749"
-
+  var events = 0;
+  
   $.ajax({
     url: queryURL1,
     method: "GET",
@@ -68,9 +52,10 @@ function ticketSearch(artistSearch){
 
     //Number of Events Coming Up
     console.log(response.upcoming_event_count)
+    events = response.upcoming_event_count
 
     //Artist Image
-    console.log()
+    console.log(response.image_url)
 
   })
 
@@ -82,15 +67,26 @@ function ticketSearch(artistSearch){
   }).then(function(response){
     //Response from API
     console.log(response)
+    console.log(events)
 
-    //Number of Events Coming Up
-    console.log(response[0].datetime)
+    if(events > 0){
+          //Number of Events Coming Up
+    let date0 = new Date( Date.parse(response[0].datetime))
+    console.log(date0)
     console.log(response[0].venue.location)
 
-    console.log(response[1].datetime)
+    let date1 = new Date( Date.parse(response[1].datetime))
+    console.log(date1)
     console.log(response[1].venue.location)
 
-    console.log(response[2].datetime)
+    let date2 = new Date( Date.parse(response[2].datetime))
+    console.log(date2)
     console.log(response[2].venue.location)
+    }
+    else{
+      
+    }
+
+
   })
 }
