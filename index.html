@@ -24,7 +24,7 @@
                     <span id="whiteText">-Show</span>
                 </h1>
             </div>
-
+            <br>
             <div id="searchBar">
                 <div class="columns is-mobile is-centered ">
                     <div class="column is-11">
@@ -43,14 +43,14 @@
             </div>
         </div>                
     </header>
-        
+    <br>   
     
     <!-- this is the second page displayed to user following search, displaying both spotify and ticketmaster info -->
-    <div id="searchInfo" class="tile is-ancestor">   
+    <div id="searchInfo">   
         
         <!-- after search of artists then the spotify api will display artist photo, artist info, possibly list of songs  -->
         <!-- create a filler template using artist name, picture, top songs, etc -->
-        <div id="spotifyDisplay" class="columns">
+        <div id="spotifyDisplay" class="columns is-multiline">
           
                 <div id="artistInfo">
                     <!-- seeing if we can get bands in town img-->
@@ -58,41 +58,51 @@
                     <div id="artistName">Migos</div>
                     <div id="artistGenre">Hip Hop</div>
                 </div>
+                <br>
                 <div class="column" id="songList">
                     <!-- Spotify Top Songs/Albums Filler / Spotify Top Songs/Albums Filler / Spotify Top Songs/Albums Filler -->
-                    <div class="songTitle">Song Title 1</div>    
-                    <div class="songTitle">Song Title 2</div>
-                    <div class="songTitle">Song Title 3</div>
+                    <div id="songTitle1">Song Title 1</div>    
+                    <div id="songTitle2">Song Title 2</div>
+                    <div id="songTitle3">Song Title 3</div>
                 </div>
             
             
         </div>
+        <br>
         <!--here will display to user the artists upcoming shows using the ticketmaster API// two boxes with api attr. on top of one large container box with photo background  -->
-        <div id="bandsInTown" class="columns bandsInTownContainer">
+        <div id="bandsInTown" class="columns is-multiline">
             
                 <div id="venueInfoShow" class="column venueInfoShow">
-                    <div class="location">Pokemon Stadium Venue 1</div>
-                    <div class="location">Pokemon Stadium Venue 2</div>
-                    <div class="location">Pokemon Stadium Venue 3</div>
+                    <div id="time1">Month Date Year Date 1</div>
+                    <div id="location1">Pokemon Stadium Venue 1</div>
+                    <br>
+                    <div id="time2">Month Date Year Date 2</div>
+                    <div id="location2">Pokemon Stadium Venue 2</div>
+                    <br>
+                    <div id="time3">Month Date Year Date 3</div>
+                    <div id="location3">Pokemon Stadium Venue 3</div>
+                    <br>
+                    <div><a href=""></a></div>
+                    
+                    
+                    
+                
                 </div>
-
-                <div id="dateTimeShow" class="column dateTimeShow">
-                    <div class="time">Month Date Year Date 1</div>
-                    <div class="time">Month Date Year Date 2</div>
-                    <div class="time">Month Date Year Date 3</div>
-                </div>
-            
+                
+                
+               
+               
         </div>
     </div> 
+    <br>
     
-    
-    <footer id="footer" class="footer">
+    <!-- <footer id="footer" class="footer">
         <div class="content has-text-centered">
           <p>
             <strong>Spot-A-Show</strong> by <a href="https://github.com/rahme">Raffay Ahmed</a>, <a href="https://github.com/andrewyen64">Andrew Yen</a> and <a href="https://github.com/cmsebastian">Chris Sebastian</a>.
           </p>
         </div>
-    </footer>
+    </footer> -->
 
 
 </div>    
