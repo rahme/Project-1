@@ -22,9 +22,9 @@
           </div>
         </section>
         <section>
-          <div id="searchBar" class="my-1 py-3 container">
-            <div class="columns is-mobile is-centered ">
-                <div class="column is-11">
+          <div id="searchBar" class="container">
+            <div class="columns is-mobile is-centered">
+                <div class="column">
                     <div class="field has-addons">
                         <div class="control is-expanded">
                             <input id="artist" class="input is-rounded" type="text" placeholder="Search Your Artist">
@@ -44,13 +44,14 @@
       <section id="lastFm" class="section">
 
         <div class="container">
-          <div id="artistInfo" class="columns mt-1 mb-2 is-vcentered">
+          <div id="artistInfo" class="columns is-vcentered">
             <div class="column">
               <div class="notification">      
                 <div id="artistInfo" class="card has-text-centered is-wide">
-                  <header class="py-1">
-                    <div class=" has-text-centered is-wide is-centered">
+                  <header class="">
+                    <div class="card-content has-text-centered is-wide is-centered">
                       <h1  id="artistName" class="title">Migos</h1>
+                      <br>
                       <h3 class="subtitle">Hip-Hop</h3> 
                     </div>
                   </header>
@@ -61,17 +62,17 @@
         </div>
 
         <div class="container">
-          <div class="column is-centered">
+          <div class="columns is-vcentered is-centered">
             <div class="column is-half">
               <div class="notification has-text-center">
                 <div class="box has-background-white">
-                  <article class="media">
-                    <div class="media-center">
-                      <figure class="image is-128x128">
-                        <img id="artistImg" class="" src="Assets/images/ticketmaster-logo.jpg" alt="">
+                  
+                    
+                      <figure class="image container is-square">
+                        <img id="artistImg" class="center" src="Assets/images/ticketmaster-logo.jpg" alt="Photo of artist searched for.">
                       </figure>
-                    </div>
-                  </article>
+                    
+                  
 
                   
                 </div>
@@ -88,7 +89,7 @@
                   <div class="card-content">
                     <div id="songList" class="content is-centered">
                       
-                      <p class="subtitle is-5">Top Tracks</p>
+                      <h5 class="title">Top Tracks</h5>
                       <br>
                       <p id="songTitle1" class="">Placeholder Song Title</p>
                       <p id="songTitle2" class="">Placeholder Song Title</p>
@@ -110,25 +111,65 @@
       
       <section id="bandsInTown" class="section">
         <div class="container">
+            
           <div id="venueShowInfo" class="columns">
+
             <div class="column">
-              <div id="show1" class="notification has-text-centered mx-3">
-                <div id="time1">Month Date Year Date 1</div>
-                <div id="location1">Pokemon Stadium Venue 1</div>
+              <div id="show1" class="notification has-text-centered">
+                <div class="box">
+                    <div class="card-content">
+                        <div class="content is-centered">
+                            <h5 class="title">Date</h5>
+                            <p id="time1">Month Date Year Date 1</p>
+                            <br>
+                            <h5 class="title">Location</h5>
+                            <p id="location1">Pokemon Stadium Venue 1</p>
+                            <p><a id="bandsInTownLink1" href=""></a></p>                            
+                        </div>
+                    </div>
+
+
+                </div>
               </div>
             </div>
+
             <div class="column">
-              <div id="show2" class="notification has-text-centered mx-3">
-                <div id="time2">Month Date Year Date 1</div>
-                <div id="location2">Pokemon Stadium Venue 1</div>
+              <div id="show2" class="notification has-text-centered">
+                <div class="box">
+                    <div class="card-content">
+                        <div class="content is-centered">
+                            <h5 class="title">Date</h5>
+                            <p id="time2">Month Date Year Date 1</p>
+                            <br>
+                            <h5 class="title">Location</h5>
+                            <p id="location2">Pokemon Stadium Venue 1</p>
+                            <p><a id="bandsInTownLink2" href=""></a></p>                            
+                        </div>
+                    </div>
+
+     
+                </div>
               </div>
             </div>
+
             <div class="column">
-              <div id="show3" class="notification has-text-centered mx-3">
-                <div id="time3">Month Date Year Date 1</div>
-                <div id="location3">Pokemon Stadium Venue 1</div>
+
+              <div id="show3" class="notification has-text-centered">
+                <div class="box">
+                    <div class="card-content">
+                        <div class="content is-centered">
+                            <h5 class="title">Date</h5>
+                            <p id="time3">Month Date Year Date 1</p>
+                            <br>
+                            <h5 class="title">Location</h5>
+                            <p id="location3">Pokemon Stadium Venue 1</p>
+                            <p><a id="bandsInTownLink3" href=""></a></p>                            
+                        </div>
+                    </div>
+                </div>
               </div>
             </div>
+
           </div>
         </div>
       </section>
