@@ -1,12 +1,30 @@
-//site will open on #homeScreen with site logo and search bar visble
+$("#search").click(function () {
+    let artistSearch = $("#artist").val();
+    //console.log(artistSearch)
+    fmSearch(artistSearch);
+    ticketSearch(artistSearch);
+});
 
-//on user search
+function fmSearch(artistSearch){
+    console.log(artistSearch)
+    artistSearch = encodeURIComponent(artistSearch.trim())
+    console.log(artistSearch)
 
-//search bar will minimize and move to top right 
+    //Searching for Top Songs
+    var queryURL1 = "http://ws.audioscrobbler.com/2.0/?method=artist.gettoptracks&artist=" + artistSearch + "&api_key=c480f7f0a05a2b8e0d17968d01265fbe&format=json"
 
-//site logo will move to top left corner
+    $.ajax({
+        url: queryURL1,
+        method: "GET",
+      }).then(function(response) {
+  
+        console.log(response);
 
-//search results for spotify will be displayed on top part of body
+        for(i = 0; i < 3; i++){
+          console.log(response.toptracks.track[i].name)
+          //$("ID").val(response.toptracks.track[i].name)
+        }
+      });
 
 //ticketmaster info will be displayed below spotify info
 
@@ -58,7 +76,6 @@ function fmSearch(artistSearch){
 
 function ticketSearch(artistSearch){
   var queryURL1 = "https://rest.bandsintown.com/artists/" + artistSearch + "/?app_id=45255e6cc480b6c589613047fb0d5749"
-
   $.ajax({
     url: queryURL1,
     method: "GET",
