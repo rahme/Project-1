@@ -2,6 +2,13 @@
 
 Link to the Web Page: https://rahme.github.io/Spot-A-Show/
 
+## Table of Concents
+* [Description](#Description)
+* [Usage](#Usage)
+* [Contributors](#Contributors)
+* [License](#License)
+
+
 ## Description
 A web application where a user can search their favorite artist to find their genre, top songs, and upcoming music events. This allows the user to keep up with their favorite artists by having all the necesary information accessible and on one page.
 
