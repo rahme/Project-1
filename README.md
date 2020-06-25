@@ -2,7 +2,7 @@
 
 Link to the Web Page: https://rahme.github.io/Spot-A-Show/
 
-## Table of Concent
+## Table of Contents
 * [Description](#Description)
 * [Usage](#Usage)
 * [Contributors](#Contributors)
