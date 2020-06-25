@@ -13,7 +13,7 @@ function fmSearch(artistSearch){
     console.log(artistSearch)
 
     //Searching for Top Songs
-    var queryURL1 = "http://ws.audioscrobbler.com/2.0/?method=artist.gettoptracks&artist=" + artistSearch + "&api_key=c480f7f0a05a2b8e0d17968d01265fbe&format=json"
+    var queryURL1 = "https://ws.audioscrobbler.com/2.0/?method=artist.gettoptracks&artist=" + artistSearch + "&api_key=c480f7f0a05a2b8e0d17968d01265fbe&format=json"
 
     $.ajax({
         url: queryURL1,
@@ -25,7 +25,7 @@ function fmSearch(artistSearch){
       });
 
     //Searching for Artist Info
-    var queryURL2 = "http://ws.audioscrobbler.com/2.0/?method=artist.getinfo&artist=" + artistSearch + "&api_key=c480f7f0a05a2b8e0d17968d01265fbe&format=json"
+    var queryURL2 = "https://ws.audioscrobbler.com/2.0/?method=artist.getinfo&artist=" + artistSearch + "&api_key=c480f7f0a05a2b8e0d17968d01265fbe&format=json"
 
     $.ajax({
       url: queryURL2,
