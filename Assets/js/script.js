@@ -1,3 +1,36 @@
+<<<<<<< HEAD
+=======
+$("#search").click(function () {
+    let artistSearch = $("#artist").val();
+    //console.log(artistSearch)
+    fmSearch(artistSearch);
+    ticketSearch(artistSearch);
+});
+
+function fmSearch(artistSearch){
+    console.log(artistSearch)
+    artistSearch = encodeURIComponent(artistSearch.trim())
+    console.log(artistSearch)
+
+    //Searching for Top Songs
+    var queryURL1 = "http://ws.audioscrobbler.com/2.0/?method=artist.gettoptracks&artist=" + artistSearch + "&api_key=c480f7f0a05a2b8e0d17968d01265fbe&format=json"
+
+    $.ajax({
+        url: queryURL1,
+        method: "GET",
+      }).then(function(response) {
+  
+        console.log(response);
+
+        for(i = 0; i < 3; i++){
+          console.log(response.toptracks.track[i].name)
+          //$("ID").val(response.toptracks.track[i].name)
+        }
+      });
+
+//ticketmaster info will be displayed below spotify info
+
+>>>>>>> master
 $("#search").click(function () {
     let artistSearch = $("#artist").val();
     //console.log(artistSearch)
@@ -41,8 +74,11 @@ function fmSearch(artistSearch){
 
 function ticketSearch(artistSearch){
   var queryURL1 = "https://rest.bandsintown.com/artists/" + artistSearch + "/?app_id=45255e6cc480b6c589613047fb0d5749"
+<<<<<<< HEAD
   var events = 0;
   
+=======
+>>>>>>> master
   $.ajax({
     url: queryURL1,
     method: "GET",
