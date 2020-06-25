@@ -27,7 +27,6 @@
     font-size: 50px;
 }
 
-
 #artistInfo {
     justify-content: center;
 }
@@ -46,7 +45,14 @@ body {
     background-attachment: fixed;
     background-size: cover;
     background-color: #464646;
-}    
+}
+
+footer{
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: relative;
+}
 
 @media only screen and (max-width: 767px) {
     body {
@@ -54,7 +60,7 @@ body {
     }
   }
 
-  @media only screen and (max-width: 375px) {
+@media only screen and (max-width: 375px) {
     body {
       background-image: url(../images/admission-small.jpg);
     }
